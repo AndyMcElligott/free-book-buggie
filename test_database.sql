@@ -20,7 +20,7 @@ VALUES( 'Esoteric Order of Dagon','https://www.octopussgarden.es/wp-content/uplo
 ('Read To the Animals', 'https://www.mainstreetbooksminot.com/sites/mainstreetbooksminot.com/files/Reading%20With%20Rover.png','non-profit','987','West Barkway', NULL, 'Minneapolis','MN','Hennepin','55411'),
 ('The Human Fund', 'https://images.adagio.com/images2/custom_blends/33590.jpg','non-profit','1000', 'Wall St.', '#5001', 'New York','NY', NULL,'10281'),
 ('Greendale Community College', 'https://images-na.ssl-images-amazon.com/images/I/41-621wQstL._SX331_BO1,204,203,200_.jpg','school','5443','Community RD E', NULL, 'Minneapolis', 'MN', 'Ramsey', '55119'),
-('Church of The Flying Spaghetti Monster', 'https://images-na.ssl-images-amazon.com/images/I/41kY3eUmMQL._AC_.jpg', 'religious', '1', 'Noodly Appendage Way', NULL, 'Bloomington', 'MN', 'Hennepin', '55431')
+('Church of The Flying Spaghetti Monster', 'https://images-na.ssl-images-amazon.com/images/I/41kY3eUmMQL._AC_.jpg', 'religious', '1', 'Noodly Appendage Way', NULL, 'Bloomington', 'MN', 'Hennepin', '55431');
 
 -- Contacts
 
@@ -40,7 +40,7 @@ VALUES ('Ctulhu Mythos', 'Pastor', 1, '800-246-1357', 'office', 'ctulhu@dagon.co
 ('Steve Edwin', 'Volunteed', 2, '612-555-2345', 'cell', 'steve@RTTA.org'),
 ('George C.', 'Director', 3, '952-555-9876', 'office', 'costanza@humanfund.com'),
 ('Craig Pelton', 'Teacher', 4, '651-555-4332', 'office', 'cpelton@greendale.com'),
-('Fabrizzio Cavatappi', 'Boilerman', 5, '715-555-4321', 'cell', 'cavatappi@noodlyappendage.com')
+('Fabrizzio Cavatappi', 'Boilerman', 5, '715-555-4321', 'cell', 'cavatappi@noodlyappendage.com');
 
 -- Events
 
@@ -74,7 +74,7 @@ CREATE TABLE "demographics_age" (
     "4-7" integer,
     "8-12" integer,
     "13-18" integer
-)
+);
 INSERT INTO "demographics_age" ("organization_id", "0-3", "4-7", "8-12", "13-18")
 VALUES(1, 0, 75, 25, 0),
 (2, 25, 75, 0, 0),
@@ -90,7 +90,7 @@ CREATE TABLE "demographics_race" (
     "american_indian_or_alaska_native" integer, 
     "asian" integer, 
     "native_hawaiian_or_pacific_islander" integer
-)
+);
 
 INSERT INTO "demographics_race" ("organization_id", "white", "black_or_african_american", "american_indian_or_alaska_native", "asian", "native_hawaiian_or_pacific_islander")
 VALUES(1, 75, 25, 0, 0, 0),
